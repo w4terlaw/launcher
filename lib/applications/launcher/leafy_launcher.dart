@@ -9,7 +9,6 @@ import 'package:leafy_launcher/module/home_settings/oss_license/home_settings_os
 import 'package:leafy_launcher/resources/app_constants.dart';
 import 'package:leafy_launcher/services/oss_licenses/oss_licenses_service.dart';
 
-import '../../database/leafy_notes_db/leafy_notes_database.dart';
 import '../../module/app_picker/app_picker_binding.dart';
 import '../../module/app_picker/app_picker_home_controller.dart';
 import '../../module/app_picker/app_picker_page.dart';
@@ -62,7 +61,6 @@ class LeafyLauncher {
   /// Initializes secondary dependecies.
   /// The app can start w/o them and they will be loaded soon.
   static Future initSecondaryDependencies() async {
-    dbInitialization();
 
     Get.put(OssLicensesService().init(), permanent: true);
     Get.lazyPut(() => const ToastService(), fenix: true);
@@ -82,9 +80,6 @@ class LeafyLauncher {
     );
   }
 
-  static Future dbInitialization() async {
-    LeafyNotesDatabaseLibrary.initialize(Get);
-  }
 
   static Future run(AppFlavour flavour) async {
     await initPrimaryDependencies(flavour);
