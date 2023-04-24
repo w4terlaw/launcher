@@ -231,7 +231,7 @@ class InstalledApplicationsService with LogableMixin, EnsureInitializedMixin {
         break;
     }
 
-    if (!LeafySettings.vibrateNever) {
+    if (!WaterSettings.vibrateNever) {
       _deviceVibration.weak();
     }
 

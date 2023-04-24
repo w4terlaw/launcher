@@ -45,7 +45,7 @@ class IntroController extends ControllerBase
   void onInit() {
     super.onInit();
 
-    LeafySettings.setFirstLaunchToFalse();
+    WaterSettings.setFirstLaunchToFalse();
 
     opacityHelloController = AnimationController(
       vsync: this,

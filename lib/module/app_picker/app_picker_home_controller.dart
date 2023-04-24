@@ -46,7 +46,7 @@ class AppPickerHomeController extends AppPickerControllerBase {
       await Future.delayed(const Duration(milliseconds: 75));
     }
 
-    if (LeafySettings.vibrateAlways) {
+    if (WaterSettings.vibrateAlways) {
       _deviceVibration.weak();
     }
 

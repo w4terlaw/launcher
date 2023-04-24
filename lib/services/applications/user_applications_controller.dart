@@ -142,7 +142,7 @@ class UserApplicationsController extends StatusControllerBase {
 
   @override
   Future load() async {
-    _vibrationPreferences = LeafySettings.vibrationPreferences;
+    _vibrationPreferences = WaterSettings.vibrationPreferences;
 
     await _restoreApps();
 
@@ -362,7 +362,7 @@ class UserApplicationsController extends StatusControllerBase {
         throw Exception('Unknown VibrationPreferenesType');
     }
 
-    LeafySettings.setVibrationPreferences(toSet);
+    WaterSettings.setVibrationPreferences(toSet);
     _vibrationPreferences = toSet;
 
     update([kVibrationPreferencesBuilderKey]);

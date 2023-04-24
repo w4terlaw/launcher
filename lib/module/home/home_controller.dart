@@ -418,7 +418,7 @@ class HomeController extends StatusControllerBase
   }
 
   Future openSettings() async {
-    if (LeafySettings.vibrateAlways) {
+    if (WaterSettings.vibrateAlways) {
       _deviceVibration.weak();
     }
 
@@ -588,7 +588,7 @@ class HomeController extends StatusControllerBase
   }
 
   void openCalendar() {
-    if (LeafySettings.vibrateAlways) {
+    if (WaterSettings.vibrateAlways) {
       _deviceVibration.weak();
     }
 

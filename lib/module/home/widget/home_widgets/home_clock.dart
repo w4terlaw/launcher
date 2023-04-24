@@ -48,7 +48,7 @@ class _HomeClockState extends ThemedState<HomeClock, HomeTheme> {
   }
 
   void _onPressed() {
-    if (!LeafySettings.vibrateNever) {
+    if (!WaterSettings.vibrateNever) {
       _deviceVibration.weak();
     }
 

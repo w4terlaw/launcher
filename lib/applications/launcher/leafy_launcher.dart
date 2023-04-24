@@ -40,7 +40,7 @@ import '../../utils/app_flavour/app_flavour.dart';
 import '../../utils/preferences/shared_preferences.dart';
 import 'app_routes.dart';
 
-class LeafyLauncher {
+class WaterLauncher {
   /// Initializes must have dependecies.
   /// Without these the app cannot be started normally.
   static Future initPrimaryDependencies(AppFlavour flavour) async {
@@ -81,7 +81,7 @@ class LeafyLauncher {
 
     LeafyTheme.restoreThemeStyle();
 
-    await LeafySettings.restore();
+    await WaterSettings.restore();
 
     L10n.restore();
 
@@ -105,7 +105,7 @@ class LeafyLauncher {
         fallbackLocale: L10n.enLocale,
         translations: L10nProvider(),
         getPages: [
-          if (LeafySettings.isFirstLaunch)
+          if (WaterSettings.isFirstLaunch)
             GetPage(
               name: '/',
               binding: IntroBinding(),

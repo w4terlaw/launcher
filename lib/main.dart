@@ -7,5 +7,5 @@ void main() => mainCommon(AppFlavour.dev);
 
 Future mainCommon(AppFlavour flavour) async {
   WidgetsFlutterBinding.ensureInitialized();
-  return LeafyLauncher.run(flavour);
+  return WaterLauncher.run(flavour);
 }

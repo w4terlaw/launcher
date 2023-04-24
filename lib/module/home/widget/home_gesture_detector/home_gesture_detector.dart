@@ -168,7 +168,7 @@ class _HomeGestureDetectorState extends State<HomeGestureDetector>
   Future _onTopSwipe() async {
     widget.onTopSwipe();
 
-    if (LeafySettings.vibrateAlways) {
+    if (WaterSettings.vibrateAlways) {
       _deviceVibration.weak();
     }
   }
@@ -176,7 +176,7 @@ class _HomeGestureDetectorState extends State<HomeGestureDetector>
   Future _onLeftSwipe() async {
     widget.onLeftSwipe();
 
-    if (LeafySettings.vibrateAlways) {
+    if (WaterSettings.vibrateAlways) {
       _deviceVibration.weak();
     }
   }
@@ -184,7 +184,7 @@ class _HomeGestureDetectorState extends State<HomeGestureDetector>
   Future _onRightSwipe() async {
     widget.onRightSwipe();
 
-    if (LeafySettings.vibrateAlways) {
+    if (WaterSettings.vibrateAlways) {
       _deviceVibration.weak();
     }
   }
@@ -200,7 +200,7 @@ class _HomeGestureDetectorState extends State<HomeGestureDetector>
       curve: Curves.easeOut,
     );
 
-    if (LeafySettings.vibrateAlways) {
+    if (WaterSettings.vibrateAlways) {
       _deviceVibration.weak();
     }
   }
@@ -235,7 +235,7 @@ class _HomeGestureDetectorState extends State<HomeGestureDetector>
     }
 
     if (val >= swipeControllerThreshold && controller.value < .99) {
-      if (LeafySettings.vibrateAlways) {
+      if (WaterSettings.vibrateAlways) {
         _deviceVibration.weak();
       }
     }

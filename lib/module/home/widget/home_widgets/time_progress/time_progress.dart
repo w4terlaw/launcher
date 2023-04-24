@@ -120,7 +120,7 @@ class _TimeProgressState extends ThemedState<TimeProgress, HomeTheme> {
   }
 
   void _nextState() {
-    if (LeafySettings.vibrateAlways) {
+    if (WaterSettings.vibrateAlways) {
       _deviceVibration.weak();
     }
 

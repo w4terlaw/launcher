@@ -49,7 +49,7 @@ class TutorialController extends ControllerBase
   void onInit() {
     super.onInit();
 
-    LeafySettings.setFirstLaunchToFalse();
+    WaterSettings.setFirstLaunchToFalse();
 
     quickLaunchSlideController = SlideController();
     horizontalSwipesSlideController = SlideController();

@@ -6,7 +6,7 @@ import 'package:leafy_launcher/utils/preferences/shared_preferences.dart';
 part 'vibration_preferences.dart';
 
 // ignore: non_constant_identifier_names
-final LeafySettings = _LeafySettings();
+final WaterSettings = _LeafySettings();
 
 class _LeafySettings with LogableMixin {
   late VibrationPreferences _vibrationPreferences;

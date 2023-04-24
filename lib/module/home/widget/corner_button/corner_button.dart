@@ -120,7 +120,7 @@ class _CornerButtonState extends ThemedState<CornerButton, HomeTheme>
             margin: kHomeCornerButtonEdgeInsets,
             type: widget.type,
             onPressed: () {
-              if (!LeafySettings.vibrateNever) {
+              if (!WaterSettings.vibrateNever) {
                 _deviceVibration.weak();
               }
 
